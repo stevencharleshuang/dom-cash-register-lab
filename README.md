@@ -1,13 +1,29 @@
-# Cash Register Lab
+# Cash-register-dom-lab
 
-## Your assignment is to build a basic electronic cash register. 
+## Build a cash register app using vanilla javascript and DOM manipulation
 
-The user will be able to see a list of their purchases as well as a running total. 
+WooHoo you made it through the week! You are all amazing, you should be very proud! Now it's time for your first solo project. You have until Sunday night to build out a basic cash register. You've all built out a memory game so you definitely hake the skills! So what exactly should this thing do? Glad you asked!
 
-**A few things to keep in mind while you work this out** 
+* Display a line for the user to input a value
+* Have a submit button that a user can click to add the value to the total
+* Grab the entered value when the submit button is clicked and display it correctly formatted like this: '$28.31'
+* Have a place to display a running total of all the values the user has entered.
+* Have a place that displays the values that the user has entered so far.
 
- - How will you grab the user input? Remember your DOM manipulation skills.
+**Some points to keep in mind** 
 
- - How will you update the total? this would probably be a good place for a function.
+* Commit early, Commit often, git is your friend!
+* Pseudocode! Plan out your project before you write a line of code.
+* Draw pictures! Having a visual representation of your project to work from is super helpful!
+* Keep your functions short and conscise. A function should only do one thing!
 
- - How will you display the money? The amounts should be formatted with a dollar sign and two trailing zeroes.
+**Submission instructions** 
+
+1. Fork this repo
+2. Clone your forked repo to your local machine
+3. Work, Work, Work!(remember **ABC** Always Be Commiting)
+4. Once you're finished go to your gitub repo and create and submit a pull request.
+5. Eat snacks, Pet a dog, relax!
+6. For a more detailed description check out this guid [homework submission guide](https://git.generalassemb.ly/wdi-nyc-dresselhaus/dresselhaus-students/blob/master/homework-submission-instructions.md) 
+
+🚨 **This is due by Sunday(7/17)** 🚨
