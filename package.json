@@ -1,0 +1,28 @@
+{
+  "name": "cash-register-dom-lab",
+  "version": "1.0.0",
+  "description": "Build a cash register app using vanilla javascript and DOM manipulation",
+  "main": "index.js",
+  "scripts": {
+    "test": "open ./test/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.generalassemb.ly:wdi-nyc/cash-register-dom-lab.git"
+  },
+  "keywords": ["javascript", "unit-1"],
+  "author": "",
+  "contributors":[
+    "Jason Seminara <js@ga.co>"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.7.0"
+  }
+}
