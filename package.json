@@ -10,9 +10,12 @@
     "type": "git",
     "url": "git@git.generalassemb.ly:wdi-nyc/cash-register-dom-lab.git"
   },
-  "keywords": ["javascript", "unit-1"],
+  "keywords": [
+    "javascript",
+    "unit-1"
+  ],
   "author": "",
-  "contributors":[
+  "contributors": [
     "Jason Seminara <js@ga.co>"
   ],
   "license": "ISC",
@@ -23,6 +26,7 @@
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.7.0"
+    "eslint-plugin-import": "^2.7.0",
+    "jsdoc-to-markdown": "^3.0.0"
   }
 }
