@@ -1,4 +1,6 @@
 # Cash-register-dom-lab
+![cash-register-layout](https://git.generalassemb.ly/storage/user/10/files/452cc65e-68ae-11e7-9749-74d9304aae84)
+
 
 ## Build a cash register app using vanilla javascript and DOM manipulation
 
