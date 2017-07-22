@@ -4,7 +4,7 @@
   "description": "Build a cash register app using vanilla javascript and DOM manipulation",
   "main": "index.js",
   "scripts": {
-    "test": "open ./test/index.html"
+    "test": "mocha ./test/tests.js --watch"
   },
   "repository": {
     "type": "git",
@@ -12,16 +12,37 @@
   },
   "keywords": [
     "javascript",
-    "unit-1"
+    "unit-1",
+    "tests",
+    "unit-tested"
   ],
-  "author": "",
+  "ga_co": {
+    "duration": "1:25",
+    "type": "lab",
+    "competencies": "programming",
+    "city": [
+      "London",
+      "San Francisco",
+      "New York"
+    ],
+    "learning objectives": [
+      "Target and manipulate DOM elements",
+      "Capture data from a submitted HTML form",
+      "Update the DOM with new data",
+      "Maintain the program's 'state' between interactions"
+    ],
+  },
+  "author": "General Assembly FEWD",
   "contributors": [
     "Jason Seminara <js@ga.co>"
   ],
   "license": "ISC",
   "dependencies": {
     "chai": "^4.1.0",
-    "mocha": "^3.4.2"
+    "jsdom": "^11.1.0",
+    "mocha": "^3.4.2",
+    "mocha-jsdom": "^1.1.0",
+    "sinon": "^2.3.8"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
