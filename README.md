@@ -28,7 +28,7 @@ Take a look at the animation above. We're going to build that!
 1. From the command-line: 
     - `npm i` (this will get all the tools necessary for this exercise).
     - `git checkout -b solution` to start working on a new solution.
-1. Open `js/app.js`
+1. Open [js/app.js]
     - Each function and its behavior are described in **each function's comments**.
     - Find all the `TODO: [xx]` comments; they'll describe what to do 
     - All the function names are already inside the file; you just need to implement the function by adding code inside each one.
@@ -72,7 +72,8 @@ When you've completed the lab,
 
 ## Bonus 2
 
-What are these prices for? What did you buy? Can you add itemizations for each purchase? 
+What are these prices for? What did you buy? 
+**Let's add itemizations for each purchase!**
 
 1. Each purchase should have a description on the left side of each price. (The extra `<td>` is already provided for you.)
     1. Does the new description text need to be styled to fit so it aligns left?
@@ -95,3 +96,4 @@ What are these prices for? What did you buy? Can you add itemizations for each p
 [Number.ParseFloat()]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/parseFloat
 [Test-Driven Development]: https://en.wikipedia.org/wiki/Test-driven_development#Test-driven_development_cycle
 [function documentation]: docs.md
+[js/app.js]: js/app.js
