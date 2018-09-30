@@ -13,7 +13,6 @@
  */
 function removeDecimal(str) {
   // TODO: [1] write the body of this function (described above)
-
   return Math.round(parseFloat(str) * 100) * 100/100;
 }
 
@@ -26,6 +25,8 @@ function removeDecimal(str) {
  */
 function dollarFormat(num) {
   // TODO: [2] write the body of this function (described above)
+  let numString = Math.round(Number.parseFloat(num)).toFixed(2) / 100;
+  return `$${numString}`;
 }
 
 /**
