@@ -30,7 +30,7 @@
       "Capture data from a submitted HTML form",
       "Update the DOM with new data",
       "Maintain the program's 'state' between interactions"
-    ],
+    ]
   },
   "author": "General Assembly FEWD",
   "contributors": [

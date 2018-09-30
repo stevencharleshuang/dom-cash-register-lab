@@ -13,6 +13,8 @@
  */
 function removeDecimal(str) {
   // TODO: [1] write the body of this function (described above)
+
+  return Math.round(parseFloat(str) * 100) * 100/100;
 }
 
 /**
