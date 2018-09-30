@@ -68,6 +68,11 @@ function cashRegisterApplication($els) {
    */
   const addRow = function (content) {
     // TODO: [5] write the body of this function (described above)
+    let tableRef = $els.entries;
+    let row = tableRef.insertRow(0);
+    let cell = row.insertCell(0);
+    cell.append(content);
+    return row;
   };
 
 
