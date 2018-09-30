@@ -38,10 +38,10 @@ function dollarFormat(num) {
 function getEls() {
   // TODO: [3] replace these nulls with actual document queries.
   return {
-    total:      null,
-    entries:    null,
-    entryForm:  null,
-    inputField: null,
+    total:      document.querySelector('#total'),
+    entries:    document.querySelector('#entries'),
+    entryForm:  document.querySelector('#entry'),
+    inputField: document.querySelector('input'),
   };
 }
 
