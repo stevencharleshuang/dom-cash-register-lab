@@ -327,7 +327,7 @@ describe('CashRegisterApplication', () => {
 
     it('should update the total field', () => {
       // ARRANGE
-      $testEls.inputField.value = '68790r';
+      $testEls.inputField.value = '68790';
 
       const expected = '<tr><th>Total</th><th id="total">$68790.00</th></tr>';
       const $footer = document.querySelector('tfoot');

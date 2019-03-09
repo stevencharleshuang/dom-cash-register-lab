@@ -25,7 +25,7 @@ function removeDecimal(str) {
  */
 function dollarFormat(num) {
   // TODO: [2] write the body of this function (described above)
-  let numString = Math.round(Number.parseFloat(num)).toFixed(2) / 100;
+  let numString = parseFloat(num / 100).toFixed(2);
   return `$${numString}`;
 }
 
@@ -54,7 +54,7 @@ function getEls() {
 function cashRegisterApplication($els) {
   // this stores the total
   // TODO: [4] at what value should we start?
-  let total;
+  let total = 0;
 
   /**
    * @func addRow
@@ -66,12 +66,20 @@ function cashRegisterApplication($els) {
    * @see https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement/insertCell
    * @see https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/insertRow
    */
-  const addRow = function (content) {
+  const addRow = function (content, blank) {
     // TODO: [5] write the body of this function (described above)
     let tableRef = $els.entries;
-    let row = tableRef.insertRow(0);
-    let cell = row.insertCell(0);
-    cell.append(content);
+    let row = tableRef.insertRow();
+    if (!!blank) {
+      let cell1 = row.insertCell(0);
+      let cell2 = row.insertCell(1);
+      cell1.innerHTML = '';
+      cell2.innerHTML = content;
+    } else {
+      let cell = row.insertCell(0);
+      cell.innerHTML = content;
+    }
+
     return row;
   };
 
@@ -87,30 +95,29 @@ function cashRegisterApplication($els) {
    */
   const handleFormSubmit = function (event) {
     // TODO: [6] stop the form from submitting and reloading the window
-
+    event.preventDefault();
 
     // TODO: [7] get the value from the entry field, clean it up
     // note: remember that form fields ALWAYS contain text
-
+    let cleanEntry = removeDecimal($els.inputField.value);    
 
 
     // TODO: [8] make a variable that's in dollar format
-
-
+    let dollForm = dollarFormat(cleanEntry);
 
     // TODO: [9] add a row with the data
     // note: our design dictates that this row should have two cells (description, and price)
     // let's insert the new empty cell BEFORE the existing one
-
-
+    addRow(dollForm, 'description');
 
     // TODO: [10] update the total price
     // TODO: [11] update the display total in dollarFormat
-
+    total += cleanEntry;
+    let dollTotal = dollarFormat(total);
+    $els.total.innerHTML = `${dollTotal}`;
 
     // TODO: [12] reset the form to clear out anything previously typed
-
-
+    $els.entryForm.reset();
   };
 
 
@@ -136,7 +143,6 @@ function cashRegisterApplication($els) {
 function onLoad() {
   cashRegisterApplication(getEls());
 }
-
 
 // this is here so we can test the code
 if ((typeof module) !== 'undefined') {
